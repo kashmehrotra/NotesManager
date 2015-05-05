@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="25dp"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/frame"
+    android:background="#EF6555">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:id="@+id/linear_row"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dragIcon"
+            android:src="@drawable/menu"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:id="@+id/titleText" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:textColor="#FFFFFF"
+        android:id="@+id/contentText"
+        android:layout_margin="5dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:id="@+id/radiogroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trivial"
+            android:id="@+id/trivial"
+            android:textColor="#FFFFFF"
+            android:layout_margin="5dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Important"
+            android:id="@+id/important"
+            android:textColor="#FFFFFF"
+            android:layout_margin="5dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Critical"
+            android:id="@+id/critical"
+            android:textColor="#FFFFFF"
+            android:layout_margin="5dp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:id="@+id/buttonlayout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:text=""
+            android:id="@+id/ok"
+            android:layout_gravity="left" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:text=""
+            android:id="@+id/cancel"
+            android:layout_gravity="right" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
